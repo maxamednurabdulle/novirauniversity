@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admission Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    form {
+      border: 1px solid #ccc;
+      padding: 20px;
+      width: 350px;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0 16px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Foomka Diiwaan-gelinta</h2>
+
+<form action="db.php" method="post">
+  <label for="fullname">Magaca Buuxa:</label>
+  <input type="text" id="fullname" name="fullname" required>
+
+  <label for="email">Email-ka:</label>
+  <input type="text" id="email" name="email" required>
+  <label for="schol">School Name</label>
+  <input type="text" id="schol" name="schol" required>
+  
+
+  <label for="phone">Telefoon:</label>
+  <input type="text" id="phone" name="phone" required>
+
+  <label for="faculty">Kulliyadda:</label>
+  <select id="faculty" name="faculty" required>
+    <option value="">-- Xulo Kulliyadda --</option>
+    <option value="Engineering">Kulliyadda Injineerinka</option>
+    <option value="Medicine">Kulliyadda Caafimaadka</option>
+    <option value="ComputerScience">Kulliyadda Computer Science</option>
+    <option value="Education">Kulliyadda Waxbarashada</option>
+    <option value="Business">Kulliyadda Maamulka & Ganacsiga</option>
+    <option value="Agriculture">Kulliyadda Beeraha</option>
+  </select>
+
+<input type="submit" name="submit" value="submit">
+
+</form>
+
+</body>
+</html>
